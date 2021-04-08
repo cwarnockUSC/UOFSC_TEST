@@ -19,16 +19,11 @@ class SageTest(TestCommand):
             sys.exit(1)
 
 setup(
-    name = "sage_sample",
-    version = readfile("VERSION").strip(), # the VERSION file is shared with the documentation
-    description='An example of a basic sage package',
-    long_description = readfile("README.rst"), # get the long description from the README
-    # For a Markdown README replace the above line by the following two lines:
-    #  long_description = readfile("README.md"),
-    #  long_description_content_type="text/markdown",
-    url='https://github.com/sagemath/sage_sample',
-    author='Matthias Koeppe, Sébastien Labbé, Viviane Pons, Nicolas M. Thiéry, ... with inspiration from many',
-    author_email='viviane.pons@lri.fr', # choose a main contact email
+    name = 'uofsc_calculus_labs',
+    version = '0.2',
+    description = 'A collection of functions for UofSC Calculus Labs',
+    author = 'Cuyler Warnock',
+    author_email = 'cwarnock@math.sc.edu', # choose a main contact email
     license='GPLv2+', # This should be consistent with the LICENCE file
     classifiers=[
       # How mature is this project? Common values are
@@ -36,15 +31,15 @@ setup(
       #   4 - Beta
       #   5 - Production/Stable
       'Development Status :: 4 - Beta',
-      'Intended Audience :: Science/Research',
       'Topic :: Software Development :: Build Tools',
       'Topic :: Scientific/Engineering :: Mathematics',
       'License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)',
       'Programming Language :: Python :: 3.7',
     ], # classifiers list: https://pypi.python.org/pypi?%3Aaction=list_classifiers
     keywords = "SageMath packaging",
-    packages = ['sage_sample'],
+    packages = ['uofsc_calculus_labs'],
     cmdclass = {'test': SageTest}, # adding a special setup command for tests
     setup_requires   = ['sage-package'],
     install_requires = ['sage-package', 'sphinx'],
 )
+
