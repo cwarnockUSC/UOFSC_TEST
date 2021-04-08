@@ -1,3 +1,3 @@
 # Calculus_Labs_Test
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cwarnockUSC/UOFSC_TEST/HEAD)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cwarnockUSC/UOFSC_TEST/master)
